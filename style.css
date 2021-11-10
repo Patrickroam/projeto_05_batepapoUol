@@ -1,0 +1,81 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 375px;
+    height: 80px;
+
+    background-color: white;
+    border: 01px solid rgb(211, 199, 199);
+
+    position: fixed;
+    top: 0px;
+
+    padding: 0 15px;
+
+    z-index: 1;
+}
+.bodyMain{
+    display: flex;
+    flex-direction: column;
+
+    width: 375px;
+
+    background-color: khaki;
+
+
+    position: fixed;
+    top: 0;
+    bottom: 0;
+
+    padding-top: 100px;
+}
+
+.boxInput{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 375px;
+    height: 80px;
+
+    background-color: white;
+    border: 1px solid rgb(211, 199, 199);
+
+    position: fixed;
+    bottom: 0px;
+
+    padding: 0 15px;
+
+    z-index: 1;
+}
+.boxChat{
+    width: 100%;
+    height: 40px;
+
+    background-color: pink;
+
+    margin: 5px 0px;
+}
+
+.logo{
+    width: 75px;
+    height: 53px;
+}
+.iconPeople{
+    width: 50px;
+    height: 40px;
+}
+
+.input{
+    width: 145px;
+    height: 30px;
+
+    border: opx;
+}
