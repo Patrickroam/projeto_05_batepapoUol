@@ -1,62 +1,57 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;1,100;1,300;1,400&display=swap" rel="stylesheet">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bate-Papo UOL</title>
+  <link rel="stylesheet" href="assets/stylesheet/reset.css">
+  <link rel="stylesheet" href="assets/stylesheet/style.css">
 </head>
+
 <body>
-  <header class="header"> 
-      <img class="logo" src="img/logo.png" alt="Logotipo da Uol">
-      <ion-icon class="iconPeople" name="people"></ion-icon>
+  <div class="menu-fundo fundo-escondido" onclick="toggleMenu()"></div>
+
+  <header>
+    <img src="assets/imagens/img/logo.png">
+    <ion-icon name="people-sharp"></ion-icon>
   </header>
-  <main class="bodyMain">
-      <section class="status-Online">
-          <P class="text">
-            <span class="hour">(09:21:45)</span>
-            <strong class="name">João</strong> entra na sala...
-          </P>
-      </section>
-      <section class="massage-Everyone">
-        <P class="text">
-            <span class="hour">(09:21:45)</span>
-            <strong class="name">João</strong> para<strong class="to"> Todos</strong>: Bom dia
-          </P>
-      </section>
-      <section class="directMessage">
-        <P class="text">
-            <span class="hour">(09:21:45)</span>
-            <strong class="name">Maria</strong> para<strong class="to"> João</strong>: Bom dia
-          </P>
-      </section>
-      <section class="reservedMessage">
-        <P class="text">
-            <span class="hour">(09:21:45)</span>
-            <strong class="name">Maria</strong> reservadamente<strong class="to"> João</strong>: Oi gatinha quer tc? KKKKKKKKKKKKKKKK
-          </P>
-      </section>
-      <section class="status-Offline">
-        <P class="text">
-            <span class="hour">(09:21:45)</span>
-            <strong class="name">Maria</strong> saiu da sala...
-          </P>
 
-      </section>
-
+  <main>
+    <ul class="mensagens-container">
+    </ul>
   </main>
-  <footer class="boxInput">
-      <input class="input" type="text" placeholder="Escreva aqui...">
-      <ion-icon class="iconPlane" name="paper-plane-outline"></ion-icon>
 
+  <footer>
+    <div class="entrada-mensagem">
+      <input placeholder="Escreva aqui..." class="input-mensagem">
+      <span class="enviando">Enviando para Todos</span>
+    </div>
+    <button data-identifier="send-message">
+      <ion-icon name="paper-plane-outline"></ion-icon>
+    </button>
   </footer>
-  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-  <script src="javaScript.js"></script>
+
+  <aside class="menu escondido">
+    <h3 class="titulo-menu">Escolha um contato para enviar mensagem</h3>
+    <ul class="contatos">
+
+    </ul>
+    <h3 class="titulo-menu">Escolha a visibilidade</h3>
+    <ul class="visibilidade">
+      <li class="visibilidade-publico selecionado">
+        <ion-icon name="lock-open"></ion-icon>Público<ion-icon class="check" name="checkmark-outline">
+        </ion-icon>
+      </li>
+      <li class="visibilidade-privado">
+        <ion-icon name="lock-closed"></ion-icon>Reservadamente<ion-icon class="check" name="checkmark-outline">
+        </ion-icon>
+      </li>
+    </ul>
+  </aside>
+
+
+  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 </body>
+
 </html>
