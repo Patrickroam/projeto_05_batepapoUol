@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;1,100;1,300;1,400&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -14,18 +17,46 @@
       <ion-icon class="iconPeople" name="people"></ion-icon>
   </header>
   <main class="bodyMain">
-      <section class="boxChat"></section>
-      <section class="boxChat"></section>
-      <section class="boxChat"></section>
-      <section class="boxChat"></section>
+      <section class="status-Online">
+          <P class="text">
+            <span class="hour">(09:21:45)</span>
+            <strong class="name">João</strong> entra na sala...
+          </P>
+      </section>
+      <section class="massage-Everyone">
+        <P class="text">
+            <span class="hour">(09:21:45)</span>
+            <strong class="name">João</strong> para<strong class="to"> Todos</strong>: Bom dia
+          </P>
+      </section>
+      <section class="directMessage">
+        <P class="text">
+            <span class="hour">(09:21:45)</span>
+            <strong class="name">Maria</strong> para<strong class="to"> João</strong>: Bom dia
+          </P>
+      </section>
+      <section class="reservedMessage">
+        <P class="text">
+            <span class="hour">(09:21:45)</span>
+            <strong class="name">Maria</strong> reservadamente<strong class="to"> João</strong>: Oi gatinha quer tc? KKKKKKKKKKKKKKKK
+          </P>
+      </section>
+      <section class="status-Offline">
+        <P class="text">
+            <span class="hour">(09:21:45)</span>
+            <strong class="name">Maria</strong> saiu da sala...
+          </P>
+
+      </section>
 
   </main>
   <footer class="boxInput">
-      <input class="input" type="text">
-      <ion-icon name="paper-plane-outline"></ion-icon>
+      <input class="input" type="text" placeholder="Escreva aqui...">
+      <ion-icon class="iconPlane" name="paper-plane-outline"></ion-icon>
 
   </footer>
-  <script src="javaScript.js"></script>
   <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="javaScript.js"></script>
 </body>
 </html>
